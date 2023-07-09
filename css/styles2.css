@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Anek+Gujarati&family=Crimson+Text&family=Inter&family=Lato:wght@300;700&family=Maven+Pro&family=Open+Sans:wght@400;700&family=Poppins:ital,wght@0,300;0,700;1,500&family=Yrsa&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+section {
+    padding: 40px 20px;
+}
+
+body {
+    background-color: #fbfbfb;
+}
+
+a {
+    text-decoration: none; 
+    color: inherit;
+}
+
+.header {
+     
+    height: 90px;
+    position: fixed; 
+    justify-content: space-between;
+    width: 100%; 
+    background-color: whitesmoke;
+    align-items: center;
+    margin-top: auto;
+    text-align: center;
+}
+
+nav a:hover{
+    color: coral;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px; 
+    font-family: 'Anek Gujarati', sans-serif; 
+    font-weight: bold; 
+    padding: 0 40px; 
+    line-height: 80px;
+    background-color: whitesmoke;
+}
+
+.menu {
+    display: flex; 
+    margin-right: 40px;
+} 
+
+.item {
+    font-size: 20px; 
+    margin: 0 10px; 
+    line-height: 90px; 
+    text-transform: uppercase;
+    background-color: whitesmoke;
+    display: inline-block;
+}
+
+.nav {
+    display: flex; 
+    justify-content: space-between;
+    margin-right: 40px;
+}
+
+ul {
+    list-style: none;
+    text-size-adjust: 18px;
+    font-family: 'Anek Gujarati', sans-serif;
+}
+
+li {
+    text-size-adjust: 18px;
+    font-family: 'Anek Gujarati', sans-serif;
+}
+
+.circulo {
+    display: block;
+    width: 45%;
+    margin: auto; 
+    border-radius: 250px; 
+    background-image: none; 
+    margin-top: 80px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    text-align: center;
+    text-size-adjust: 36px;
+    font-family: 'Anek Gujarati', sans-serif;
+    margin-bottom: 20px;
+}
+
+h2 {
+    text-align: center;
+    text-size-adjust: 28px;
+    font-family: 'Anek Gujarati', sans-serif;
+    margin-bottom: 20px;
+}
+
+p {
+    text-align: center;
+    text-size-adjust: 18px;
+    font-family: 'Anek Gujarati', sans-serif;
+    margin-bottom: 20px;
+    margin: 20px 0;
+    line-height: 1.2;
+}
+
+.boton {border: 1px solid  #af599e; 
+    padding: 10px; 
+    background-color:  #af599e;
+    color: #ffffff; 
+    text-decoration: none; 
+    text-transform: uppercase; 
+    font-family: 'Anek Gujarati', sans-serif;
+    border-radius: 40px; 
+    text-size-adjust: 18px;
+}
+
+p a:hover {
+    color: coral;
+}
+
+.icono {
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.icono1 {
+    width: 50px;
+    height: 50px;
+}
+
+.icono2 {
+    width: 50px;
+    height: 50px;
+} 
+
+@media screen and (max-width:700px){
+    header, nav, .logo, .menu, .Inicio{
+        flex-direction: column;
+    }
+    nav{
+        padding:10px 0px;
+    }
+    .item{
+        width: 50%;
+        padding: 5px;
+    }
+    .circulo {
+        margin-top: 20px;
+    }
+} 
+
