@@ -9,6 +9,7 @@
 
 body {
     background-color: #fbfbfb;
+    padding: auto;
 }
 
 a {
@@ -34,7 +35,7 @@ a {
     min-height: 90px;
     position: fixed; 
     justify-content: space-between;
-    background-color: whitesmoke;
+    background-color: #B2FF9E;
     align-items: center;
     margin-top: auto;
     text-align: center;
@@ -42,7 +43,7 @@ a {
 }
 
 nav a:hover{
-    color: coral;
+    background-color: #1dd3b0;
 }
 
 .logo {
@@ -54,23 +55,26 @@ nav a:hover{
     font-weight: bold; 
     padding: 0 40px; 
     line-height: 80px;
-    background-color: whitesmoke;
+    background-color: #B2FF9E;
 }
 
 .menu {
     display: flex; 
-    
     padding: auto;
 } 
 
 .item {
     font-size: 20px; 
-    margin: 0 10px; 
-    line-height: 90px; 
+    margin: 10px;
+    line-height: 50px; 
     text-transform: uppercase;
-    background-color: whitesmoke;
+    background-color: #B2FF9E;
     display: inline-block;
     justify-content: center;
+    border-radius: 5px; 
+    border: 1px  #1dd3b0;
+    padding: 10px;
+    
 }
 
 .nav {
@@ -83,38 +87,66 @@ ul {
     list-style: none;
     text-size-adjust: 18px;
     font-family: 'Anek Gujarati', sans-serif;
+    text-align: center;
 }
 
 li {
     text-size-adjust: 18px;
     font-family: 'Anek Gujarati', sans-serif;
+    padding: 10px;
+    text-size-adjust: 20px;
+    text-align: center;
 }
 
 
 #Inicio {
     display: flex;
+    justify-content: space-around;
+    padding: 16px;
+    flex-direction: column;
+    align-items: center;
+}
+
+#Contacto {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px;
+    flex-direction: column;
+    text-align: center;
+    width: 350px;
+    margin: auto;
+   
+}
+
+#Contacto .hablemos {
+    background-color: #4acab0;
+    border-radius: 20px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+#Contacto .hablemos p {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.circulo {
+    display: flex;
     justify-content: space-between;
     padding: 16px;
     flex-direction: column;
     align-items: center;
-    min-height: 100vh;
-    padding: 40px 20px;
-}
-
-.circulo {
-    width: 400px;
-    margin: auto; 
+    width: 300px;
     border-radius: 250px; 
     background-image: none; 
     margin-top: 80px;
     margin-bottom: 20px;
 }
 
-h1 {
-    text-size-adjust: 36px;
-    font-family: 'Anek Gujarati', sans-serif;
-    margin-bottom: 20px;
+#Presentacion {
     text-align: center;
+    justify-content: center;
+    align-items: center;
 }
 
 p {
@@ -125,27 +157,26 @@ p {
     text-align: center;
 }
 
-h2 {
+h1 {
     text-align: center;
-    text-size-adjust: 28px;
+    font-size: 36px;
     font-family: 'Anek Gujarati', sans-serif;
     padding: auto;
+    margin-top: 2opx;
 }
 
-#Presentacion {
-    text-size-adjust: 18px;
-    font-family: 'Anek Gujarati', sans-serif;
-    margin-bottom: 20px;
-    margin: 20px 0;
-    line-height: 1.2;
+h2 {
     text-align: center;
+    font-size: 28px;
+    font-family: 'Anek Gujarati', sans-serif;
+    padding: auto;
+    margin-top: 10px;
 }
 
 .boton {
-    border: 1px solid  #af599e; 
+    border: 1px  #1dd3b0; 
     padding: 10px; 
-    background-color:  #af599e;
-    color: #ffffff; 
+    background-color: #1dd3b0;
     text-decoration: none; 
     text-transform: uppercase; 
     font-family: 'Anek Gujarati', sans-serif;
@@ -154,13 +185,15 @@ h2 {
     justify-content: center;
 }
 
-a:hover {
-    color: coral;
+#Presentacion a:hover {
+    background-color: #b2ff9e;
 }
 
 .icono {
     display: inline-block;
     margin-top: 20px;
+    margin-bottom: 20pxpx;
+    background-color:  #fbfbfb;
 }
 
 .icono1 {
@@ -173,6 +206,32 @@ a:hover {
     height: 50px;
 } 
 
+footer {
+    background-color: #bff9b1 ; 
+    height: 90px;
+}
+
+.derechos {
+    padding-top: 30px;
+}
+
+.derechos a {
+    line-height: 10px; 
+    background-color:   #c9f8bd;
+    display: inline-block;
+    justify-content: center;
+    border-radius: 5px; 
+    padding: 10px;
+}
+
+.derechos a:hover {
+    background-color:  #bff9b1;
+    transition: 0.3s;
+}
+.derechos p {
+    line-height: 0;
+}
+
 @media (max-width:700px){
     header, nav, .logo, .menu, .Inicio{
         flex-direction: column;
@@ -184,9 +243,30 @@ a:hover {
     nav{
         padding:10px 0px;
     }
-
     .circulo {
-        margin-top: 20px;
+        margin-top: 10px;
     }
 } 
 
+@media (min-width:1024px) {
+    #Inicio {
+        flex-direction: row;
+    }
+    h1 {
+        font-size: 48px;
+        text-align: left;
+    }
+    h2 {
+        font-size: 32px;
+    }
+    #Presentacion {
+        width: 50%;
+        text-align: left;
+        padding-top: 80px;
+    }
+
+    #Presentacion p {
+        text-align: left;
+    }
+
+}
