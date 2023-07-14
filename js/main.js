@@ -1,3 +1,4 @@
+
 const menuItems = document.querySelectorAll('.menu-item');
 menuItems.forEach(function(item) {
     item.addEventListener('click', function(e) {

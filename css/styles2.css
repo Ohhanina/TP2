@@ -42,8 +42,13 @@ a {
     text-size-adjust: 20px;
 }
 
-nav a:hover{
+ul li .active {
     background-color: #1dd3b0;
+    border-radius: 5px; 
+    border: 1px  #1dd3b0;
+    padding: 10px;
+    
+
 }
 
 .logo {
@@ -63,16 +68,16 @@ nav a:hover{
     padding: auto;
 } 
 
-.item {
+ul li a {
     font-size: 20px; 
     margin: 10px;
-    line-height: 50px; 
+    line-height: 50px;
     text-transform: uppercase;
     background-color: #B2FF9E;
     display: inline-block;
     justify-content: center;
-    border-radius: 5px; 
-    border: 1px  #1dd3b0;
+    /*border-radius: 5px; 
+    border: 1px  #1dd3b0;*/
     padding: 10px;
     
 }
